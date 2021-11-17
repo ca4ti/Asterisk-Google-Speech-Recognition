@@ -18,6 +18,15 @@ On Debian and Ubuntu based operating systems :
 apt install -y libflac-dev flac \
     python-numpy python-scipy python-dev python-setuptools \
     libsndfile-dev
+or 
+sudo apt install python3-numpy python3-scipy python3-matplotlib python3-pandas python3-sympy python3-nose
+apt install -y libflac-dev flac  python-dev python-setuptools libsndfile-dev
+pip install scikits.audiolab==0.11.0
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+python2 get-pip.py
+python2.7 -m pip install numpy
+python2.7 -m pip install scipy
+python2.7 -m pip install scikits.audiolab
 ```
 
 Download and install audiolab from: http://pypi.python.org/pypi/scikits.audiolab/
