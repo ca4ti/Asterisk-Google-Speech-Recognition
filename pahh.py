@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 #Copyright (c) 2012, Eng Eder de Souza
 #Accessing the Google API for speech recognition With Asterisk!
 #Eng Eder de Souza
