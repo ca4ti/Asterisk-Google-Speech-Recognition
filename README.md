@@ -26,8 +26,22 @@ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 python2 get-pip.py
 python2.7 -m pip install numpy
 python2.7 -m pip install scipy
+    ##install wave module
+    wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz
+    tar -xzf libsndfile-1.0.25.tar.gz
+    cd libsndfile-1.0.25
+    ./configure
+    make -j8
+    make -j8 install
+   
+    wget --no-check-certificate https://pypi.python.org/packages/source/s/scikits.audiolab/scikits.audiolab-0.11.0.tar.gz#md5=f93f17211c7763d8631e0d10f37471b0
+    tar -xzf scikits.audiolab-0.11.0.tar.gz
+    cd scikits.audiolab-0.11.0
+    python setup.py build
+    python setup.py install
 python2.7 -m pip install scikits.audiolab
 ```
+
 
 Download and install audiolab from: http://pypi.python.org/pypi/scikits.audiolab/
 
