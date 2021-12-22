@@ -27,7 +27,7 @@ python2 get-pip.py
 python2.7 -m pip install numpy
 python2.7 -m pip install scipy
 yum groupinstall 'Development Tools'
-yum install python-setuptools numpy libsndfile-devel
+yum install python-setuptools numpy libsndfile-devel alsa-lib-devel
     ##install wave module
     wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz
     tar -xzf libsndfile-1.0.25.tar.gz
