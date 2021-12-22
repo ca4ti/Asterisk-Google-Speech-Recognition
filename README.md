@@ -35,13 +35,14 @@ yum install python-setuptools numpy libsndfile-devel alsa-lib-devel gcc
     ./configure
     make -j8
     make -j8 install
+
+
+python2.7 -m pip install scikits.audiolab==0.11.0
     wget https://pypi.python.org/packages/source/s/scikits.audiolab/scikits.audiolab-0.11.0.tar.gz      
     tar -zxvf scikits.audiolab-0.11.0.tar.gz
     cd scikits.audiolab-0.11.0
     python setup.py build
     python setup.py install
-
-python2.7 -m pip install scikits.audiolab==0.11.0
 ```
 
 
