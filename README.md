@@ -21,28 +21,32 @@ apt install -y libflac-dev flac \
 or 
 sudo apt install python3-numpy python3-scipy python3-matplotlib python3-pandas python3-sympy python3-nose
 apt install -y libflac-dev flac  python-dev python-setuptools libsndfile-dev
-pip install scikits.audiolab==0.11.0
+
+#dependencias se for centos
+yum groupinstall 'Development Tools'
+yum install python-setuptools numpy libsndfile-devel alsa-lib-devel gcc
+
+
+    #wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz
+    #tar -xzf libsndfile-1.0.25.tar.gz
+    #cd libsndfile-1.0.25
+    #./configure
+    #make -j8
+    #make -j8 install
+
+#instalação de dependencias do python manualmente se necessário.
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 python2 get-pip.py
 python2.7 -m pip install numpy==1.7.1
 python2.7 -m pip install scipy==0.12.1
-yum groupinstall 'Development Tools'
-yum install python-setuptools numpy libsndfile-devel alsa-lib-devel gcc
-    ##install wave module
-    wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz
-    tar -xzf libsndfile-1.0.25.tar.gz
-    cd libsndfile-1.0.25
-    ./configure
-    make -j8
-    make -j8 install
-
-
 python2.7 -m pip install scikits.audiolab==0.11.0
-    wget https://pypi.python.org/packages/source/s/scikits.audiolab/scikits.audiolab-0.11.0.tar.gz      
-    tar -zxvf scikits.audiolab-0.11.0.tar.gz
-    cd scikits.audiolab-0.11.0
-    python setup.py build
-    python setup.py install
+
+#alternativo
+    #wget https://pypi.python.org/packages/source/s/scikits.audiolab/scikits.audiolab-0.11.0.tar.gz      
+    #tar -zxvf scikits.audiolab-0.11.0.tar.gz
+    #cd scikits.audiolab-0.11.0
+    #python setup.py build
+    #python setup.py install
 ```
 
 
