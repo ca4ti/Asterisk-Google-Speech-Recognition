@@ -24,10 +24,10 @@ apt install -y libflac-dev flac  python-dev python-setuptools libsndfile-dev
 pip install scikits.audiolab==0.11.0
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 python2 get-pip.py
-python2.7 -m pip install numpy
-python2.7 -m pip install scipy
+python2.7 -m pip install numpy==1.7.1
+python2.7 -m pip install scipy==0.12.1
 yum groupinstall 'Development Tools'
-yum install python-setuptools numpy libsndfile-devel alsa-lib-devel
+yum install python-setuptools numpy libsndfile-devel alsa-lib-devel gcc
     ##install wave module
     wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz
     tar -xzf libsndfile-1.0.25.tar.gz
