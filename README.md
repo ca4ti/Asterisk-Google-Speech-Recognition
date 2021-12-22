@@ -26,7 +26,7 @@ apt install -y libflac-dev flac  python-dev python-setuptools libsndfile-dev
 yum groupinstall 'Development Tools'
 yum install python-setuptools numpy libsndfile-devel alsa-lib-devel gcc
 
-
+    #apenas se necessário
     #wget http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz
     #tar -xzf libsndfile-1.0.25.tar.gz
     #cd libsndfile-1.0.25
