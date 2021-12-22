@@ -38,14 +38,10 @@ yum install python-setuptools numpy libsndfile-devel alsa-lib-devel gcc
     wget https://pypi.python.org/packages/source/s/scikits.audiolab/scikits.audiolab-0.11.0.tar.gz      
     tar -zxvf scikits.audiolab-0.11.0.tar.gz
     cd scikits.audiolab-0.11.0
-    python setup.py install
-   
-    wget --no-check-certificate https://pypi.python.org/packages/source/s/scikits.audiolab/scikits.audiolab-0.11.0.tar.gz#md5=f93f17211c7763d8631e0d10f37471b0
-    tar -xzf scikits.audiolab-0.11.0.tar.gz
-    cd scikits.audiolab-0.11.0
     python setup.py build
     python setup.py install
-python2.7 -m pip install scikits.audiolab
+
+python2.7 -m pip install scikits.audiolab==0.11.0
 ```
 
 
