@@ -66,3 +66,11 @@ exten=>_11111111,n,GotoIf($[${EXISTS(${GoogleUtterance})}]?hello:bye)
 exten=>_11111111,n(hello),NoOP(You Said = ${GoogleUtterance})
 exten=>_11111111,n(bye),Hangup()
 ```
+
+```
+[ura]
+exten => _X.,1,Answer()
+exten => _X.(ouvir),n,EAGI(pahh.py)
+exten => _X.n,GotoIf("${GoogleUtterance}"="RESPOSTA"]?ouvir:ouvir)
+exten => _X.,n(fim),Hangup()
+```
